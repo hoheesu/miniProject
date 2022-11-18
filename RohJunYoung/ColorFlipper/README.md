@@ -1,6 +1,6 @@
 # 📌 Color Flipper 만들어보기
 
-1조 미니프로젝트 뿌수기🦾
+1조 미니프로젝트 뿌수기 🦾
 
 ## 데모주소
 
@@ -15,7 +15,7 @@
 - document.body.style.backgroundColor
 - Math.floor()
 - Math.random()
-- # 📌 Color Flipper 만들어보기
+- array.length
 
 ## 구현사항
 
