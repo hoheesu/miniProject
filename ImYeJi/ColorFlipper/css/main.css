@@ -1,0 +1,43 @@
+/* COMMON */
+body {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: ; */
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+/* STYLE */
+nav {
+  height: 48px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+}
+nav .nav-center {
+  display: flex;
+  width: 620px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+nav .nav-center p {
+  color: rgb(73, 166, 233);
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+nav .nav-center ul {
+  display: flex;
+  /* align-items: center; */
+}
+nav .nav-center ul li a {
+  margin-right: 16px;
+  color: rgb(6, 50, 81);
+  font-size: 18px;
+}
