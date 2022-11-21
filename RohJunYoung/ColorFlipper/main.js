@@ -39,10 +39,28 @@ btnEl.addEventListener("click", function () {
     codeEl.textContent = res;
     mainEl.style.backgroundColor = res;
   } else if (statusCode === 1) {
-    let res = simpleColors[Math.floor(Math.random() * 7)];
+    const res = simpleColors[Math.floor(Math.random() * 7)];
     codeEl.textContent = res;
     mainEl.style.backgroundColor = res;
   } else {
     // 걍 모든것들 중 랜덤느낌인데 로직이 어케될까용??
+    // 자유롭게 하면될듯. 나는 50%확률로 hex, 50%확률로 simpe로 하겠음
+    const seed = Math.floor(Math.random() * 2);
+    if (seed % 2 === 0) {
+      // hex
+      let res = "#";
+      for (let i = 0; i < 6; i++) {
+        res += Math.floor(Math.random() * 15)
+          .toString(16)
+          .toUpperCase();
+      }
+      codeEl.textContent = res;
+      mainEl.style.backgroundColor = res;
+    } else {
+      // simple
+      const res = simpleColors[Math.floor(Math.random() * 7)];
+      codeEl.textContent = res;
+      mainEl.style.backgroundColor = res;
+    }
   }
 });
