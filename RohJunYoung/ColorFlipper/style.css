@@ -39,10 +39,42 @@ main {
   min-height: calc(100vh - 3rem);
   background-color: hsl(206, 33%, 96%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 main .main-color {
   display: flex;
+  padding: 16px;
+  background-color: #222;
+  margin-bottom: 40px;
+  font-size: 40px;
+  border-radius: 8px;
+}
+
+main .main-color h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+main .main-color span {
+  color: #49a6e9;
+  font-weight: 700;
+}
+
+main .btn-click {
+  padding: 12px 20px;
+  color: #222;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  border: 2px solid #222;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+main .btn-click:hover {
+  color: #fff;
+  background-color: #222;
 }
