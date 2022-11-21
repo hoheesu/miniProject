@@ -280,6 +280,8 @@ const hexColors = [
   "#dce77a",
   "#77ecca",
 ];
+const btn = document.querySelector(".btn");
+const color = document.querySelector(".color");
 
 btn.addEventListener("click", function () {
   const randomNumber = getRandomNumber();
