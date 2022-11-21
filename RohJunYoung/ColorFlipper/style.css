@@ -15,6 +15,10 @@ body {
   justify-content: space-around;
 }
 
+.header-nav div a {
+  text-decoration: none;
+}
+
 .header-nav div h4 {
   color: #49a6e9;
 }
