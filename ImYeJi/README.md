@@ -2,9 +2,8 @@
 
 1조 미니프로젝트 뿌수기 🦾
 
-## 데모주소
-
-데모를 [여기서](https://vannilla-js-basic-project-1-background-color.netlify.app/index.html) 찾아보세요
+## 사이트 주소
+https://colorflipper-imyeji.netlify.app/
 
 ## 기간
 2022/11/19 ~ 2022/11/21
