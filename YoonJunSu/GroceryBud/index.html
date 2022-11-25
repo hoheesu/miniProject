@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TODO LIST</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.scss">
 
@@ -20,12 +20,12 @@
       <form class="create-box">
         <input 
         type="search" class="list-data" 
-        placeholder="궁금한 영화를 영어로 입력해주세요" value=""
+        placeholder="add list" value=""
         >
         <input type="submit" class="add-btn">
       </form>
       <div class="list-box">
-        <ul class="list-main">
+        <ul class="list-main" id="items">
           <!-- <li>
             <p>test</p>
             <button class="edit">edit</button>
@@ -35,6 +35,13 @@
         <button class="remove-all">Remove All</button>
       </div>
     </div>
+    <form class="modal">
+      <input type="search" value="" class="edit-value">
+      <input type="submit" class="submit" value="edit">
+
+      <button class="close">x</button>
+    </form>
+    <div class="bgc"></div>
   </main>
 </body>
 </html>
