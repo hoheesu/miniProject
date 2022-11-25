@@ -1,4 +1,4 @@
-import Sortable from 'sortablejs'
+// import Sortable from 'sortablejs'
 
 const addData = document.querySelector('.list-data')
 const addBtn = document.querySelector('.add-btn')
