@@ -75,19 +75,20 @@ function findList() {
     }
   })
 
-  editBtn.forEach((e,index) => { // button.remove 을 모두 순회하고 분류
-    e.onclick = () => { // 클릭이 된 button.remove가 있다면
-      let listP = findListIndex[index].querySelector('p') // index번째<li>의 <p>
+  editBtn.forEach((e,index) => { 
+    e.onclick = () => {
+      let listP = findListIndex[index].querySelector('p')
       editBack('visible')
       editInput.focus()
-      editInput.value = listP.textContent // modal>.edit-valu=의 value값에 <p>의 내용으로 넣어준다.
+      editInput.value = listP.textContent
       editClose.addEventListener('click', () => {
         editBack('hidden')
       })
       editSubmit.addEventListener('click', (e)=>{
-        e.preventDefault()
-        listP.innerHTML = editInput.value // submit버튼을 누르면 <p>에 .edit-valu=의 value값을 넣는다.
-        window.localStorage.setItem(index,editInput.value) // 로컬스토리지에 index번호와 value를 넣어준다.
+        // e.preventDefault()
+        console.log(listP,index)
+        listP.innerHTML = editInput.value 
+        window.localStorage.setItem(index,editInput.value) 
         editBack('hidden')
       })
     }
